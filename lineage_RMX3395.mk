@@ -12,13 +12,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from ossi device
-$(call inherit-product, device/oplus/ossi/device.mk)
+$(call inherit-product, device/realme/RMX3395/device.mk)
 
-PRODUCT_DEVICE := ossi
-PRODUCT_NAME := lineage_ossi
-PRODUCT_BRAND := oplus
-PRODUCT_MODEL := ossi
-PRODUCT_MANUFACTURER := oplus
+PRODUCT_DEVICE := realme
+PRODUCT_NAME := lineage_RMX3395
+PRODUCT_BRAND := realme
+PRODUCT_MODEL := RMX3395
+PRODUCT_MANUFACTURER := realme
 
 PRODUCT_GMS_CLIENTID_BASE := android-oplus
 

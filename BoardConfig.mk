@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/oplus/ossi
+DEVICE_PATH := device/realme/RMX3395
 
 # A/B
 AB_OTA_UPDATER := true

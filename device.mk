@@ -113,4 +113,4 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/oplus
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/oplus/ossi/ossi-vendor.mk)
+$(call inherit-product, vendor/realme/RMX3395/RMX3395-vendor.mk)

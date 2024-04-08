@@ -63,6 +63,7 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := ossi_defconfig
 TARGET_KERNEL_SOURCE := kernel/oplus/ossi
+BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=0 loop.max_part=7 cgroup.memory=nokmem,nosocket pcie_ports=compat loop.max_part=7 iptable_raw.raw_before_defrag=1 ip6table_raw.raw_before_defrag=1 kpti=off iptable_raw.raw_before_defrag=1
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -76,17 +77,16 @@ BOARD_KERNEL_SEPARATED_DTBO :=
 endif
 
 # Partitions
-BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
-BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
-BOARD_DTBOIMG_PARTITION_SIZE := 1388624
-BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
-BOARD_SUPER_PARTITION_GROUPS := oplus_dynamic_partitions
-BOARD_OPLUS_DYNAMIC_PARTITIONS_PARTITION_LIST := \
-    vendor \
-    product \
-    system \
-    odm
-BOARD_OPLUS_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
+BOARD_FLASH_BLOCK_SIZE := 131072                   # 2048      * 64   (pagesize)
+BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432         # 32768     * 1024 (sdc42)
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 134217728    # 131072    * 1024 (sdc1)
+BOARD_CACHEIMAGE_PARTITION_SIZE := 452984832       # 442368    * 1024 (sdc48)
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608            # 8192      * 1024 (sdc44)
+BOARD_SUPER_PARTITION_SIZE := 10200547328          # 9961472   * 1024 (sdc47)
+
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
+
+BOARD_USES_METADATA_PARTITION := true
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6877

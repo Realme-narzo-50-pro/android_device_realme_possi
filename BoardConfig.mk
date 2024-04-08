@@ -9,13 +9,16 @@ DEVICE_PATH := device/realme/RMX3395
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
-    vendor \
     system \
-    odm \
-    vbmeta_system \
-    boot \
+    system \
+    system_ext \
+    system_ext \
     product \
-    vbmeta_vendor
+    product \
+    vendor \
+    vendor \
+    odm \
+    odm
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Architecture

@@ -14,7 +14,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from ossi device
 $(call inherit-product, device/realme/RMX3395/device.mk)
 
-PRODUCT_DEVICE := realme
+PRODUCT_DEVICE := RMX3395
 PRODUCT_NAME := lineage_RMX3395
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3395

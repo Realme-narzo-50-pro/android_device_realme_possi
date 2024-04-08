@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_ossi.mk
+    $(LOCAL_DIR)/lineage_RMX3395.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_ossi-user \
-    lineage_ossi-userdebug \
-    lineage_ossi-eng
+    lineage_RMX3395-user \
+    lineage_RMX3395-userdebug \
+    lineage_RMX3395-eng

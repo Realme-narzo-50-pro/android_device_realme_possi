@@ -70,14 +70,6 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
-    <name>android.hardware.wifi</name>
-    <version>1.0-5</version>
-    <interface>
-        <name>IWifi</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
     <name>vendor.dolby_v3_6.hardware.dms360</name>
     <version>2.0</version>
     <interface>
@@ -377,6 +369,174 @@
         <instance>default</instance>
     </interface>
 </hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.wifi.hostapd</name>
+    <version>1.0-3</version>
+    <interface>
+        <name>IHostapd</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.wifi.supplicant</name>
+    <version>1.0-4</version>
+    <interface>
+        <name>ISupplicant</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.wifi</name>
+    <version>1.0-6</version>
+    <interface>
+        <name>IWifi</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.biometrics.fingerprintpay</name>
+    <version>1.0</version>
+    <interface>
+        <name>IFingerprintPay</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.cammidasservice</name>
+    <version>1.0</version>
+    <interface>
+        <name>IMIDASService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.charger</name>
+    <version>1.0</version>
+    <interface>
+        <name>ICharger</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.engineer</name>
+    <version>1.0</version>
+    <interface>
+        <name>IEngineer</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.fido.fidoca</name>
+    <version>1.0</version>
+    <interface>
+        <name>IFidoDaemon</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.gameopt</name>
+    <version>1.0</version>
+    <interface>
+        <name>IGameOptHalService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.handlefactory</name>
+    <version>1.0</version>
+    <interface>
+        <name>IHandleFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.misc</name>
+    <version>1.0</version>
+    <interface>
+        <name>IOplusMisc</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.mtkmodemaci</name>
+    <version>1.0</version>
+    <interface>
+        <name>IMtkModemAci</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.olc</name>
+    <version>2.0</version>
+    <interface>
+        <name>IOplusLogCore</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.performance</name>
+    <version>1.0</version>
+    <interface>
+        <name>IPerformance</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.rpmh</name>
+    <version>2.0</version>
+    <interface>
+        <name>IRpmh</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.stability.oplus_project</name>
+    <version>1.0</version>
+    <interface>
+        <name>IOplusProject</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.touch</name>
+    <version>1.0</version>
+    <interface>
+        <name>IOplusTouch</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oplus.hardware.wifi</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>IOplusWifiService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.soter</name>
+    <version>1.0</version>
+    <interface>
+        <name>ISoter</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.trustonic.tee.tui</name>
+    <version>1.0</version>
+    <interface>
+        <name>ITui</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.trustonic.tee</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>ITee</name>
+        <instance>default</instance>
+    </interface>
+</hal>
 <hal format="aidl" optional="true">
     <name>android.hardware.biometrics.face</name>
     <version>1</version>
@@ -395,7 +555,7 @@
 </hal>
 <hal format="aidl" optional="true">
     <name>android.hardware.gnss</name>
-    <version>1</version>
+    <version>2</version>
     <interface>
         <name>IGnss</name>
         <instance>default</instance>
@@ -403,7 +563,7 @@
 </hal>
 <hal format="aidl" optional="true">
     <name>android.hardware.power</name>
-    <version>2</version>
+    <version>3</version>
     <interface>
         <name>IPower</name>
         <instance>default</instance>
@@ -611,7 +771,7 @@
 </hal>
 <hal format="aidl" optional="true">
     <name>vendor.oplus.hardware.wifi.supplicant</name>
-    <version>2</version>
+    <version>1</version>
     <interface>
         <name>IOplusSupplicant</name>
         <instance>default</instance>

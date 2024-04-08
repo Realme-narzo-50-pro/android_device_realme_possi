@@ -106,7 +106,11 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/mediatek \
+    hardware/oplus
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/oplus/ossi/ossi-vendor.mk)
